@@ -1,0 +1,14 @@
+.icon {
+  &-arrow-right::before {
+    position: absolute;
+    right: 25.5px;
+
+    display: block;
+    width: 16.5px;
+    height: 10px;
+
+    @include bg-image($path: '../images/icon-arrow.svg');
+
+    content: '';
+  }
+}

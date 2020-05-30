@@ -1,0 +1,68 @@
+.sidebar {
+  display: flex;
+  padding-top: 10px;
+
+  flex-flow: column;
+
+  font-size: 20px;
+  line-height: 25px;
+
+  color: #fff;
+
+  background: radial-gradient(
+      93.2% 1204.95% at 79.33% 383.02%,
+      #482c98 0%,
+      rgba(45, 30, 136, 0) 100%
+    ),
+    #06054a;
+
+  & .container {
+    display: flex;
+    min-height: inherit;
+
+    flex-flow: column;
+  }
+
+  @media screen and (min-width: 1440px) {
+    min-width: 20.84%;
+    min-height: 100vh;
+    padding-top: 26px;
+  }
+
+  &-topline {
+    display: flex;
+    padding-left: 15px;
+    margin-bottom: 16.31px;
+    padding-right: 17px;
+
+    flex-grow: 0;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (min-width: 1440px) {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    &__button {
+      width: 30px;
+      height: 16px;
+
+      background-color: transparent;
+      border: 0;
+      cursor: pointer;
+
+      &.js-toggle-menu {
+        @include bg-image($path: '../images/icon-menu.svg');
+      }
+
+      &.js-toggle-menu_show {
+        @include bg-image($path: '../images/icon-close.svg');
+      }
+
+      @media screen and (min-width: 1440px) {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+.main-wrapper {
+  font-family: 'Tenor Sans', sans-serif;
+
+  @media screen and (min-width: 1440px) {
+    display: flex;
+  }
+}

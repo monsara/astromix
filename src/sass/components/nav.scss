@@ -1,0 +1,59 @@
+.nav {
+  margin-top: 118px;
+  margin-bottom: 136px;
+
+  flex-grow: 1;
+
+  @include bg-image(
+    $path: '../../images/nav-bg.svg',
+    $size: containe,
+    $pos: 15px 331px
+  );
+
+  @media screen and (min-width: 1440px) {
+    margin-bottom: initial;
+  }
+
+  &__item {
+    position: relative;
+
+    display: flex;
+    min-height: 52px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    align-items: center;
+
+    transition: all 0.2s linear;
+
+    &:hover {
+      background: #433e8d;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      bottom: -1px;
+
+      display: block;
+      width: 100%;
+      height: 1px;
+
+      background-color: #fff;
+      opacity: 0.2;
+
+      content: '';
+    }
+
+    &:last-child::after {
+      height: 0;
+    }
+
+    &_underline {
+      text-decoration: underline;
+    }
+  }
+}

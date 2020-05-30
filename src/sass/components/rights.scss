@@ -1,0 +1,17 @@
+.rights {
+  padding-bottom: 21px;
+
+  flex-grow: 0;
+
+  font-family: IBM Plex Sans;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+
+  color: #acadc1;
+
+  @media screen and (min-width: 1440px) {
+    padding-left: 30px;
+    text-align: start;
+  }
+}

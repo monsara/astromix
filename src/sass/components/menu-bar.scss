@@ -1,0 +1,15 @@
+.menu-bar {
+  display: none;
+
+  flex-flow: column;
+  flex-grow: 1;
+
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    padding-top: 0;
+  }
+
+  &.show {
+    display: flex;
+  }
+}

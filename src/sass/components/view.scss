@@ -1,0 +1,59 @@
+.view {
+  display: flex;
+
+  &__item {
+    display: flex;
+    width: 40px;
+    height: 30px;
+
+    justify-content: center;
+    align-items: center;
+
+    background: #f0f1fa;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+
+    cursor: pointer;
+
+    &:last-child {
+      border: 0;
+      background: #52458a;
+    }
+
+    &_active {
+      background: #ffffff;
+      border: 1px solid #52458a;
+    }
+  }
+
+  &__icon {
+    display: block;
+
+    &_gallery {
+      width: 15px;
+      height: 15px;
+
+      @include bg-image($path: '../images/icon-gallery.png');
+    }
+
+    &_gallery-list {
+      width: 15.5px;
+      height: 15px;
+
+      @include bg-image($path: '../images/icon-gallery-list.svg');
+    }
+
+    &_list {
+      width: 16px;
+      height: 15px;
+
+      @include bg-image($path: '../images/icon-list.svg');
+    }
+
+    &_list-wide {
+      width: 14px;
+      height: 15px;
+
+      @include bg-image($path: '../images/icon-list-wide.svg');
+    }
+  }
+}

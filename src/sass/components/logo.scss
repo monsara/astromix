@@ -1,0 +1,22 @@
+.logo {
+  width: 100.28px;
+  height: 34.51px;
+
+  @media screen and (min-width: 1440px) {
+    width: 171.75px;
+    height: 44px;
+    margin-right: 21.25px;
+  }
+
+  &-wrap {
+    position: relative;
+
+    display: flex;
+    width: 151px;
+    justify-content: space-between;
+
+    @media screen and (min-width: 1440px) {
+      width: auto;
+    }
+  }
+}

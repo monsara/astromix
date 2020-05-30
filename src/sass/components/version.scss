@@ -1,0 +1,31 @@
+.version {
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+
+  color: #ffffff;
+
+  @media screen and (min-width: 1440px) {
+    font-size: 16px;
+  }
+
+  &-wrap {
+    position: relative;
+    top: 4px;
+
+    display: flex;
+    padding: 0 5px;
+
+    justify-content: center;
+    align-items: center;
+
+    height: 16px;
+
+    background: #656ad9;
+
+    @media screen and (min-width: 1440px) {
+      height: 20px;
+      padding: 0 7px;
+    }
+  }
+}

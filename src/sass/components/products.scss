@@ -1,0 +1,214 @@
+.products {
+  padding-top: 17px;
+  padding-bottom: 35px;
+
+  &__topline {
+    display: flex;
+    margin-bottom: 18px;
+
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (min-width: 1440px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+
+    font-size: 30px;
+    line-height: 110%;
+
+    color: #2f2949;
+
+    @media screen and (min-width: 1440px) {
+      font-size: 50px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    max-width: 1050px;
+
+    margin-bottom: 50px;
+
+    flex-flow: row wrap;
+    justify-content: center;
+
+    @media screen and (min-width: 1440px) {
+      justify-content: start;
+    }
+  }
+
+  &__item {
+    width: 170px;
+    height: 233px;
+    padding-top: 52px;
+
+    flex-flow: column;
+    align-items: center;
+
+    text-align: center;
+
+    background: #ffffff;
+    border: 1px solid #dddddd;
+
+    border-bottom: 1px solid transparent;
+    border-right: 1px solid transparent;
+
+    transition: all 0.2s linear;
+
+    cursor: pointer;
+
+    &:hover .products__name::after {
+      position: absolute;
+      right: 0;
+      top: 7px;
+
+      display: inline-block;
+      width: 16.5px;
+      height: 10px;
+
+      @include bg-image($path: '../../images/icon-arrow-dark.svg');
+
+      content: '';
+    }
+
+    @media screen and (min-width: 1440px) {
+      width: 262px;
+      height: 333px;
+
+      padding-top: 90px;
+    }
+
+    &:nth-child(2n) {
+      border-right: 1px solid #ddd;
+    }
+
+    &:nth-last-child(-n + 2) {
+      border-bottom: 1px solid #ddd;
+    }
+
+    @media screen and (max-width: 375px) {
+      &:nth-child(odd) {
+        border-right: 1px solid #ddd;
+      }
+    }
+
+    @media screen and (min-width: 545px) {
+      &:nth-child(2n) {
+        border-right: 1px solid transparent;
+      }
+
+      &:nth-child(3n) {
+        border-right: 1px solid #ddd;
+      }
+
+      &:nth-child(n + 4):nth-child(-n + 6) {
+        border-bottom: 1px solid #ddd;
+
+        &:hover {
+          border: 1px solid #52458a;
+          box-shadow: 0px 5px 20px rgba(82, 69, 138, 0.3);
+        }
+      }
+
+      &:nth-last-child(-n + 2) {
+        border-top: 1px solid transparent;
+      }
+
+      &:last-child {
+        border-right: 1px solid #ddd;
+      }
+    }
+
+    @media screen and (min-width: $breakpoint-md) {
+      &:nth-child(3) {
+        border-bottom: 1px solid #ddd;
+      }
+
+      &:nth-child(4) {
+        border-right: 1px solid #ddd;
+      }
+
+      &:nth-child(3),
+      &:nth-child(6) {
+        border-right: 1px solid transparent;
+      }
+    }
+
+    &:hover {
+      border: 1px solid #52458a;
+      box-shadow: 0px 5px 20px rgba(82, 69, 138, 0.3);
+    }
+  }
+
+  &__item-content {
+    position: relative;
+
+    max-width: 136px;
+    max-height: 56px;
+    padding-left: 30px;
+
+    text-align: left;
+    overflow: hidden;
+
+    @media screen and (min-width: 1440px) {
+      max-width: 199px;
+      max-height: 70px;
+    }
+  }
+
+  &__image {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 1440px) {
+      margin-bottom: 86px;
+    }
+  }
+
+  &__name {
+    position: relative;
+
+    margin: 0;
+    margin-bottom: 3px;
+
+    font-size: 16px;
+    line-height: 15px;
+
+    color: #2f2949;
+
+    transition: all 0.2s linear;
+
+    @media screen and (min-width: 1440px) {
+      font-size: 20px;
+      line-height: 25px;
+    }
+  }
+
+  &__desc {
+    margin: 0;
+
+    font-size: 13px;
+    line-height: 15px;
+
+    color: #777777;
+
+    @media screen and (min-width: 1440px) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  &__text {
+    max-width: 690px;
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+  }
+}

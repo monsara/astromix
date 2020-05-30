@@ -1,0 +1,23 @@
+/*
+ * Все паршалы импортировать в этот файл
+ */
+
+@import 'helpers/variables';
+@import 'helpers/mixins';
+@import 'helpers/extras';
+@import 'normalize.scss';
+@import 'base.scss';
+
+/* Components */
+@import 'components/main-wrapper';
+@import 'components/list-reset';
+@import 'components/sidebar';
+@import 'components/logo';
+@import 'components/version';
+@import 'components/menu-bar';
+@import 'components/nav';
+@import 'components/rights';
+@import 'components/icon';
+@import 'components/products';
+@import 'components/container';
+@import 'components/view';
