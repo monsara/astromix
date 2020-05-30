@@ -1,0 +1,1 @@
+"use strict";var menu=document.querySelector(".menu-bar"),toggleMenuBtn=document.querySelector(".js-toggle-menu"),handleToggleMenuBtnClick=function(e){menu.classList.toggle("show"),toggleMenuBtn.classList.toggle("js-toggle-menu_show")};toggleMenuBtn.addEventListener("click",handleToggleMenuBtnClick);
