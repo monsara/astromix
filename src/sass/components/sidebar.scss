@@ -18,6 +18,7 @@
 
   & .container {
     display: flex;
+    width: 100%;
     min-height: inherit;
 
     flex-flow: column;
@@ -35,9 +36,7 @@
 
   &-topline {
     display: flex;
-    // padding-left: 15px;
     margin-bottom: 16.31px;
-    // padding-right: 17px;
 
     flex-grow: 0;
     justify-content: space-between;
