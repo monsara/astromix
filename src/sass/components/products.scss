@@ -71,7 +71,7 @@
         width: 16.5px;
         height: 10px;
 
-        @include bg-image($path: '../../images/icon-arrow-dark.svg');
+        @include bg-image($path: '../images/icon-arrow-dark.svg');
 
         content: '';
       }
