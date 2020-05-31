@@ -17,13 +17,24 @@
     #06054a;
 
   & .container {
-    display: flex;
-    width: 100%;
-    min-height: 100%;
+    // display: flex;
+    // width: 100%;
+    // min-height: 100%;
 
-    flex-flow: column;
+    // flex-flow: column;
+
+    padding: 0;
+
+    @media screen and (min-width: $breakpoint-sm) {
+      max-width: 100%;
+    }
 
     @media screen and (min-width: 1440px) {
+      display: flex;
+      width: 100%;
+      min-height: 100%;
+
+      flex-flow: column;
       padding: 0;
     }
   }
@@ -37,6 +48,8 @@
   &-topline {
     display: flex;
     margin-bottom: 16.31px;
+    padding-left: 15px;
+    padding-right: 17px;
 
     flex-grow: 0;
     justify-content: space-between;
