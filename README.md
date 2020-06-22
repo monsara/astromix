@@ -5,9 +5,6 @@ https://monsara.github.io/astromix/
 Layout and styling of the web page. Web page based on a semantic responsive
 markup on BEM methodology.
 
-There is an incorrect hover on product cards. On the local server, the hover is
-displayed correctly.
-
 ## Browser Support
 
 New browsers — Firefox, Chrome, Opera, Microsoft Edge and IE 11, newer versions
